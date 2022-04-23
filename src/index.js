@@ -13,7 +13,7 @@ const costumers = [
  * CPF: string
  * name: string
  * id: uuid
- * record: []
+ * statement: []
  */
 app.post('/account', (request, response) => {
     const { cpf, name } = request.body;
@@ -30,24 +30,23 @@ app.post('/account', (request, response) => {
         cpf,
         name,
         id: uuidv4(),
-        record: []
+        statement: []
     });
 
     return response.status(201).send();
 });
 
-app.get('/accounts/:cpf', (request, response) => {
+app.get('/statement/:cpf', (request, response) => {
     const { cpf } = request.params;
-    console.log(cpf);
 
     const costumer = costumers.find(
         costumer => costumer.cpf == cpf
     );
 
-    if (costumer === undefined) {
+    if (!costumer) {
         return response.status(404).json({error: "Costumer not found."})
     }
-    return response.status(200).json(costumer);
+    return response.status(200).json(costumer.statement);
 });
 
 app.listen(3131);
