@@ -5,13 +5,11 @@
 </p>
 <h1 align="center">finAPI</h1>
 <p align="center">manage your finances</p>
-    <p align="center">             
-<img src="https://img.shields.io/static/v1?label=License&message=MIT&color=363940&style=for-the-badge&logo=ghost"/>
- </p> 
 
 <p align="center">             
-<img src="https://user-images.githubusercontent.com/85142222/165407048-2f9a8ad3-7c75-4d8d-b0fe-4e1f9d2bbdc4.png"/>
- </p>                                                                                                                                                                                    
+<img src="https://user-images.githubusercontent.com/85142222/165407205-7f48a374-40bd-4ccd-babd-56a179a9b473.png"/>
+ </p>
+                                                       
 ### ❔ About                                                                          
 ---                                                                                                       
 Backend application developed during the Ignite Bootcamp by Rocketseat using NodeJS, Express and uuid.
