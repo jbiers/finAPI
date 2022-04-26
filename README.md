@@ -1,8 +1,5 @@
 ## FinAPI - Finances
 
-<p align="center">
-  <img width="55": black" src="https://raw.githubusercontent.com/jbiers/color-generator/main/public/favicon.ico" alt="logo">
-</p>
 <h1 align="center">finAPI</h1>
 <p align="center">manage your finances</p>
 
