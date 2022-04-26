@@ -11,9 +11,9 @@ const costumers = [
 
 // Middleware
 function verifyIfExistsAccountCPF(request, response, next) {
-    const { CPF } = request.headers;
+    const { cpf } = request.headers;
 
-    const costumer = costumers.find(costumer => costumer.cpf === CPF);
+    const costumer = costumers.find(costumer => costumer.cpf === cpf);
 
     if (!costumer) {
         return response.status(404).json({error: "Costumer not found."})
