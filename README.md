@@ -9,7 +9,7 @@
                                                        
 ### ❔ About                                                                          
 ---                                                                                                       
-Backend application developed during the Ignite Bootcamp by Rocketseat using NodeJS, Express and uuid.
+Backend application developed during the Ignite Bootcamp by Rocketseat using NodeJS, Express.
                                                                                                                 
 ### 🎈 Requirements and Business Rule
 ---
