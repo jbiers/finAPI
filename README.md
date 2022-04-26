@@ -7,8 +7,8 @@
 - [x] It is possible to make a deposit.
 - [x] It is possible to make a withdraw.
 - [x] It is possible to search a costumer's bank statement by date.
-- [] It is possible to update a costumer's account data.
-- [] It is possible to get a costumer account data.
+- [x] It is possible to update a costumer's account data.
+- [x] It is possible to get a costumer account data.
 - [] It is possible to delete an account.
 
 ### Business Rule
