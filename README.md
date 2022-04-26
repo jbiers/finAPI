@@ -18,4 +18,4 @@
 - [x] It is not possible to search the bank statement of a nonexisting account.
 - [x] It is not possible to withdraw from a nonexistant account.
 - [] It is not possible to delete a nonexistant account.
-- [] It is not possible to withdraw with insufficient funds.
+- [x] It is not possible to withdraw with insufficient funds.
