@@ -3,7 +3,7 @@
 ### Requirements
 
 - [x] It is possible to create an account.
-- [x] It is possible to search costumer's bank statement.
+- [x] It is possible to search a costumer's bank statement.
 - [] It is possible to make a deposit.
 - [] It is possible to make a withdraw.
 - [] It is possible to search a costumer's bank statement by date.

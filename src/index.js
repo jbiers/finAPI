@@ -9,12 +9,21 @@ const costumers = [
 
 ];
 
-/**
- * CPF: string
- * name: string
- * id: uuid
- * statement: []
- */
+// Middleware
+function verifyIfExistsAccountCPF(request, response, next) {
+    const { CPF } = request.headers;
+
+    const costumer = costumers.find(costumer => costumer.cpf === CPF);
+
+    if (!costumer) {
+        return response.status(404).json({error: "Costumer not found."})
+    }
+
+    request.costumer = costumer;
+
+    return next();
+}
+
 app.post('/account', (request, response) => {
     const { cpf, name } = request.body;
 
@@ -36,16 +45,8 @@ app.post('/account', (request, response) => {
     return response.status(201).send();
 });
 
-app.get('/statement', (request, response) => {
-    const { cpf } = request.headers;
-
-    const costumer = costumers.find(
-        costumer => costumer.cpf == cpf
-    );
-
-    if (!costumer) {
-        return response.status(404).json({error: "Costumer not found."})
-    }
+app.get('/statement', verifyIfExistsAccountCPF, (request, response) => {
+    const { costumer } = request;
     return response.status(200).json(costumer.statement);
 });
 
