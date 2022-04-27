@@ -35,10 +35,10 @@ Backend application developed during the Ignite Bootcamp by Rocketseat using Nod
 Run locally
   ```bash
 # Clone this repository
-$ git clone <https://github.com/jbiers/finapi>
+$ git clone <https://github.com/jbiers/finAPI>
 
 # Access the project folder
-$ cd finapi
+$ cd finAPI
 
 # Install the dependencies
 $ npm install
